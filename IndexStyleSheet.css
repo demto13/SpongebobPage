@@ -1,0 +1,114 @@
+body
+{
+    width: 90%;
+    margin: 0 auto;
+    background-color: gray;
+    text-align: center;
+}
+
+#page
+{
+    overflow: auto;
+    background-color: blue;
+    max-width: 960px;
+    min-width: 300px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+header
+{
+    width: 98%;
+    background-color: aqua;
+    margin: 1px;
+}
+
+#topBar
+{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+#topBar li
+{
+    float: left;
+}
+
+#topBar a
+{
+    display: block;
+    border-right: 1px solid darkgray;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+#topBar a:hover
+{
+    background-color: green;
+}
+
+#topBar a.active
+{
+    background-color: green;
+}
+
+#topBar li.right
+{
+    float: right;
+    border-left: 1px solid darkgray;
+    border-right: none;
+}
+
+@media screen and (max-width: 600px)
+{
+    #topBar li.right, #topBar li
+    {
+        float: none;
+    }
+}
+main
+{
+    background-color: burlywood;
+    width: 58%;
+    height: 300px;
+    float: left;
+    clear: left;
+    margin: 1%;
+}
+
+aside
+{
+    background-color: orange;
+    width: 38%;
+    height: 300px;
+    float: right;
+    clear: right;
+    margin: 1%;
+
+}
+
+aside img
+{
+    width: 50%;
+}
+
+.article
+{
+    background-color: antiquewhite;
+    min-size: 200px;
+    margin: 10px auto;
+}
+
+footer
+{
+    background-color: chartreuse;
+    width: 98%;
+    float: right;
+    clear: left;
+    margin: 1%;
+}
